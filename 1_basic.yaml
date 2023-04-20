@@ -1,0 +1,9 @@
+# create a new S3 bucket 
+Resources:
+  Bucket1242random: # logical ID
+    Type: 'AWS::S3::Bucket' 
+    Properties:
+      BucketName: effulgence-students-bucket
+      Tags: # list of tags
+        - Key: Owner
+          Value: Sathiya

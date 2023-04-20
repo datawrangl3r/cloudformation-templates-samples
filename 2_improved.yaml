@@ -1,0 +1,16 @@
+# create a new S3 bucket 
+Parameters:
+  BucketName:
+    Type: String
+    Default: effulgence-tech-bucket-afa12b
+  BucketOwner:
+    Type: String
+    Default: Sathiya
+Resources:
+  MyS3Bucket: # logical ID
+    Type: 'AWS::S3::Bucket' 
+    Properties:
+      BucketName: !Ref BucketName
+      Tags: # list of tags
+        - Key: Owner
+          Value: !Ref BucketOwner

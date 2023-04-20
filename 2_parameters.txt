@@ -1,0 +1,2 @@
+BucketName=newbuck2425
+BucketOwner=NotMe
